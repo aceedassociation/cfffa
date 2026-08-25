@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "president": "Mot du Président",
+    "about": "Qui sommes-nous",
+    "vision": "Notre vision",
+    "products": "Nos produits",
+    "partners": "Nos partenaires",
+    "rd": "Flammes du Cluster",
+    "membership": "Adhésion",
+    "regulation": "Réglementation",
+    "contact": "Contact",
+    "become_member": "Devenir adhérent",
+    "cta_adhesion": "Devenir adhérent",
+    "search_smart": "Recherche intelligente"
+  },
+  "hero": {
+    "pill": "Filière marocaine fromage-agro",
+    "title_html": "Faire du <span class=\"text-gradient\">fromage marocain</span> un levier de souveraineté alimentaire.",
+    "sub_html": "Le <strong class=\"text-[var(--ffa-forest-dark)]\">Cluster Filière Fromage-Agro (CFFA)</strong> rassemble agriculteurs-éleveurs, coopératives, sociétés industrielles, chercheurs et institutions pour transformer chaque litre de lait en valeur durable — au service du développement rural et de l'excellence industrielle.",
+    "women_caption_html": "Plus de <strong class=\"text-[var(--ffa-ink)]\">1 000 femmes</strong> rurales accompagnées dans la filière."
+  },
+  "stats": {
+    "title": "La force d'un écosystème uni",
+    "subtitle": "Des chiffres qui témoignent de l'ancrage du CFFA dans le tissu rural marocain.",
+    "pill": "Notre communauté",
+    "farmers": "Agriculteurs-éleveurs",
+    "women": "Femmes productrices",
+    "coops": "Coopératives agricoles",
+    "companies": "Sociétés partenaires",
+    "regions": "Régions couvertes",
+    "invested": "Investis dans la filière",
+    "liters_day": "Lait/jour (avant Covid)"
+  },
+  "footer": {
+    "tagline": "Un écosystème marocain réunissant agriculteurs-éleveurs, coopératives, sociétés industrielles et chercheurs au service d'une filière fromage souveraine, compétitive et créatrice de valeur.",
+    "explore": "Explorer",
+    "community": "Communauté",
+    "newsletter_title": "Restez informé",
+    "newsletter_text": "Recevez les actualités du Cluster et de la filière.",
+    "newsletter_ok": "OK",
+    "rights": "Tous droits réservés."
+  },
+  "common": {
+    "see_more": "En savoir plus",
+    "see_all": "Voir tout",
+    "view_map": "Voir sur Google Maps",
+    "see_on_map": "Voir sur la carte",
+    "open_chat": "Assistant CFFA",
+    "loading": "Chargement…"
+  }
+}

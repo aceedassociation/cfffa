@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "president": "President's Message",
+    "about": "About us",
+    "vision": "Our vision",
+    "products": "Our products",
+    "partners": "Our partners",
+    "rd": "Cluster Flames",
+    "membership": "Membership",
+    "regulation": "Regulations",
+    "contact": "Contact",
+    "become_member": "Become a member",
+    "cta_adhesion": "Become a member",
+    "search_smart": "Smart search"
+  },
+  "hero": {
+    "pill": "Moroccan cheese-agro sector",
+    "title_html": "Making <span class=\"text-gradient\">Moroccan cheese</span> a lever of food sovereignty.",
+    "sub_html": "The <strong class=\"text-[var(--ffa-forest-dark)]\">Cluster Filière Fromage-Agro (CFFA)</strong> brings together farmers, cooperatives, industrial companies, researchers and institutions to turn every liter of milk into sustainable value — in service of rural development and industrial excellence.",
+    "women_caption_html": "More than <strong class=\"text-[var(--ffa-ink)]\">1,000 women</strong> rural producers supported in the sector."
+  },
+  "stats": {
+    "title": "The strength of a united ecosystem",
+    "subtitle": "Figures that demonstrate CFFA's deep roots in Morocco's rural fabric.",
+    "pill": "Our community",
+    "farmers": "Farmers & breeders",
+    "women": "Women producers",
+    "coops": "Agricultural cooperatives",
+    "companies": "Partner companies",
+    "regions": "Regions covered",
+    "invested": "Invested in the sector",
+    "liters_day": "Liters of milk / day (pre-Covid)"
+  },
+  "footer": {
+    "tagline": "A Moroccan ecosystem bringing together farmers, cooperatives, industrial companies and researchers in service of a sovereign, competitive and value-creating cheese sector.",
+    "explore": "Explore",
+    "community": "Community",
+    "newsletter_title": "Stay informed",
+    "newsletter_text": "Get the latest news from the Cluster and the sector.",
+    "newsletter_ok": "OK",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "see_more": "Learn more",
+    "see_all": "View all",
+    "view_map": "View on Google Maps",
+    "see_on_map": "See on the map",
+    "open_chat": "CFFA Assistant",
+    "loading": "Loading…"
+  }
+}

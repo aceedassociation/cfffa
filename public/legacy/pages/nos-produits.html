@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nos produits — Cluster Filière Fromage-Agro (CFFA)</title>
+  <meta name="description" content="Catalogue du CFFA : laits fermentés (Saykouk, Kefir, Kombucha), fromages frais & à tartiner, Mozzarella, fromages à pâte dure (Edam, Gouda, Cheddar), crèmes, beurre & sauces." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: {
+      forest: { DEFAULT:'#2E9E5F', dark:'#176B3A', light:'#5FB97E', sage:'#B5D9C0' },
+      cream: { DEFAULT:'#fdfaf3', dark:'#f7f1e3' },
+      gold: { DEFAULT:'#D6A11E', soft:'#E8CF8B' },
+      ink:'#1B2A22', mute:'#5E6B63', charcoal:'#3A4742',
+    } } } };
+  </script>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" type="image/jpeg" href="../assets/img/logo-cffa.jpg" />
+</head>
+<body>
+  <div id="app-header"></div>
+
+  <section class="bg-hero py-16 lg:py-24 relative overflow-hidden">
+    <div class="blob blob-green w-[360px] h-[360px] -top-20 -left-10"></div>
+    <div class="max-w-5xl mx-auto px-4 lg:px-8 text-center reveal">
+      <span class="pill mb-4">Catalogue</span>
+      <h1 class="font-display text-5xl lg:text-6xl font-bold leading-tight">Nos produits</h1>
+      <p class="mt-5 text-lg text-[var(--ffa-mute)] max-w-3xl mx-auto">Une gamme complète issue du savoir-faire de nos 3 unités industrielles partenaires — <strong>Aysa FMCG</strong>, <strong>Coopérative Féminine Bladi</strong> et <strong>GIE du Bassin de Ouargha</strong>.</p>
+    </div>
+  </section>
+
+  <!-- Category nav -->
+  <section class="py-6 sticky top-16 z-30 bg-[var(--ffa-cream)]/95 backdrop-blur border-b border-[rgba(23,107,58,.06)]">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 flex flex-wrap gap-3 justify-center">
+      <a href="#laits-fermentes" class="pill hover:bg-[var(--ffa-forest)] hover:text-white transition">Laits fermentés</a>
+      <a href="#frais" class="pill hover:bg-[var(--ffa-forest)] hover:text-white transition">Fromages frais & à tartiner</a>
+      <a href="#mozzarella" class="pill hover:bg-[var(--ffa-forest)] hover:text-white transition">Mozzarella</a>
+      <a href="#pate-dure" class="pill hover:bg-[var(--ffa-forest)] hover:text-white transition">Pâte dure</a>
+      <a href="#cremes" class="pill hover:bg-[var(--ffa-forest)] hover:text-white transition">Crèmes, beurre & sauces</a>
+    </div>
+  </section>
+
+  <!-- Laits fermentés -->
+  <section id="laits-fermentes" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex items-end justify-between flex-wrap gap-4 mb-8 reveal">
+        <div>
+          <span class="pill pill-gold mb-2">Famille 01</span>
+          <h2 class="font-display text-4xl font-bold">Laits fermentés</h2>
+          <p class="text-[var(--ffa-mute)] mt-2">Saykouk traditionnel, Kefir, Kombucha et aliments sans gluten — savoir-faire <strong>Aysa FMCG</strong> & <strong>Coop. Féminine Bladi</strong>.</p>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <article class="card p-5 reveal">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/saykouk-traditionnel.webp" alt="Saykouk traditionnel CFFA" width="1000" height="1000" /></div>
+          <p class="text-xs uppercase tracking-wider text-[var(--ffa-forest-dark)] font-semibold">Lait fermenté</p>
+          <h3 class="font-display text-lg font-semibold mt-1">Saykouk traditionnel</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Boisson lactée fermentée d'inspiration marocaine.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-1">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/saykouk-yaourt.webp" alt="Saykouk yaourt CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <p class="text-xs uppercase tracking-wider text-[var(--ffa-forest-dark)] font-semibold">Lait fermenté</p>
+          <h3 class="font-display text-lg font-semibold mt-1">Saykouk yaourt</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Variante yaourt, onctueuse.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-2">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/kefir.webp" alt="Kefir CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <p class="text-xs uppercase tracking-wider text-[var(--ffa-forest-dark)] font-semibold">Probiotique</p>
+          <h3 class="font-display text-lg font-semibold mt-1">Kefir</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Lait fermenté fonctionnel — Coop. Féminine Bladi.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-3">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/kombucha.webp" alt="Kombucha CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <p class="text-xs uppercase tracking-wider text-[var(--ffa-forest-dark)] font-semibold">Boisson fonctionnelle</p>
+          <h3 class="font-display text-lg font-semibold mt-1">Kombucha</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Boisson fermentée — Coop. Féminine Bladi.</p>
+        </article>
+        <article class="card p-5 reveal sm:col-span-2">
+          <div class="product-visual aspect-[2/1] rounded-xl mb-4"><img src="../assets/img/produits/sans-gluten.webp" alt="Gamme sans gluten CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <p class="text-xs uppercase tracking-wider text-[var(--ffa-forest-dark)] font-semibold">Gamme spécialisée</p>
+          <h3 class="font-display text-lg font-semibold mt-1">Aliments sans gluten</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Produits fonctionnels développés par la Coop. Féminine Bladi à partir du lait de chèvre.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fromages frais & à tartiner -->
+  <section id="frais" class="py-16 bg-soft">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex items-end justify-between flex-wrap gap-4 mb-8 reveal">
+        <div>
+          <span class="pill mb-2">Famille 02</span>
+          <h2 class="font-display text-4xl font-bold">Fromages frais & à tartiner</h2>
+          <p class="text-[var(--ffa-mute)] mt-2">Pâtes molles, fromages frais, à tartiner, liquide et Feta — savoir-faire <strong>Aysa FMCG</strong> & <strong>Coop. Féminine Bladi</strong>.</p>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <article class="card p-5 reveal">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/fromage-frais.webp" alt="Fromage frais CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Fromage frais</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Pâte fraîche, à savourer nature.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-1">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/fromage-a-tartiner.webp" alt="Fromage à tartiner CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Fromage à tartiner</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Onctueux, parfait pour le petit déjeuner.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-2">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/fromage-liquide.webp" alt="Fromage liquide CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Fromage liquide</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">À verser, à napper, à cuisiner.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-3">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/feta.webp" alt="Feta CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Feta</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Pâte fraîche en saumure.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mozzarella -->
+  <section id="mozzarella" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex items-end justify-between flex-wrap gap-4 mb-8 reveal">
+        <div>
+          <span class="pill pill-gold mb-2">Famille 03</span>
+          <h2 class="font-display text-4xl font-bold">Mozzarella</h2>
+          <p class="text-[var(--ffa-mute)] mt-2">Pâte filée, fraîcheur et texture — savoir-faire <strong>Aysa FMCG</strong>.</p>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <article class="card p-5 reveal">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/mozzarella-boule.webp" alt="Mozzarella boule CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Mozzarella boule</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Format classique, conservée en saumure.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-1">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/mozzarella-rapee.webp" alt="Mozzarella râpée CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Mozzarella râpée</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Pratique pour pizzas, gratins, snacks.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-2">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/mozzarella-sachet.webp" alt="Mozzarella en sachet CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Mozzarella en sachet</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Conditionnement individuel pratique.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pâte dure -->
+  <section id="pate-dure" class="py-16 bg-soft">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex items-end justify-between flex-wrap gap-4 mb-8 reveal">
+        <div>
+          <span class="pill mb-2">Famille 04</span>
+          <h2 class="font-display text-4xl font-bold">Fromages à pâte dure</h2>
+          <p class="text-[var(--ffa-mute)] mt-2">Affinés avec patience par le <strong>GIE du Bassin de Ouargha</strong> (Mazroua, Taounate).</p>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <article class="card p-5 reveal">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/edam.webp" alt="Edam CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Edam</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Pâte pressée, croûte rouge.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-1">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/gouda.webp" alt="Gouda CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Gouda</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Doux et fondant, affinage progressif.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-2">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/cheddar.webp" alt="Cheddar CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Cheddar</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Caractère affirmé, persistance longue.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-3">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/fromage-rape.webp" alt="Fromage râpé CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Fromage râpé</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Prêt à l'emploi, idéal cuisine.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crèmes, beurre, sauces -->
+  <section id="cremes" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex items-end justify-between flex-wrap gap-4 mb-8 reveal">
+        <div>
+          <span class="pill pill-gold mb-2">Famille 05</span>
+          <h2 class="font-display text-4xl font-bold">Crèmes, beurre & sauces fromage</h2>
+          <p class="text-[var(--ffa-mute)] mt-2">Dérivés laitiers à forte valeur ajoutée.</p>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <article class="card p-5 reveal">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/cremes.webp" alt="Crèmes CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Crèmes</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Crème fraîche, crème UHT.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-1">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/beurre.webp" alt="Beurre CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Beurre</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Doux, demi-sel, plaques de cuisine.</p>
+        </article>
+        <article class="card p-5 reveal reveal-delay-2">
+          <div class="product-visual aspect-square rounded-xl mb-4"><img src="../assets/img/produits/sauce-fromage.webp" alt="Sauce fromage CFFA" width="1000" height="1000" loading="lazy" /></div>
+          <h3 class="font-display text-lg font-semibold">Sauces fromage</h3>
+          <p class="text-sm text-[var(--ffa-mute)] mt-1">Prêtes à l'emploi pour la restauration.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div id="app-footer"></div>
+  <script src="../assets/js/chatbot.js"></script>
+  <script src="../assets/js/search.js"></script>
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/layout.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Logo CFFA — APPROXIMATION SVG (À REMPLACER par le vrai logo dès export PNG/SVG depuis logo_cluster.pdf).
+  Composition d'après la description fournie : anneau vert + tête de vache + tête de chèvre (gris) + épi de blé + part de fromage doré.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Cluster Filière Fromage-Agro">
+  <defs>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5FB97E"/>
+      <stop offset="1" stop-color="#176B3A"/>
+    </linearGradient>
+    <linearGradient id="cheeseGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2D169"/>
+      <stop offset="1" stop-color="#B8861A"/>
+    </linearGradient>
+    <linearGradient id="animalGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6E7973"/>
+      <stop offset="1" stop-color="#3A4742"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Anneau vert extérieur -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#ringGrad)" stroke-width="14"/>
+  <circle cx="100" cy="100" r="78" fill="#FDFAF3"/>
+
+  <!-- Épi de blé en haut (sur l'anneau) -->
+  <g transform="translate(100 18)">
+    <rect x="-1.5" y="-8" width="3" height="24" fill="#D6A11E" rx="1.5"/>
+    <g fill="#E8CF8B" stroke="#B8861A" stroke-width="0.6">
+      <ellipse cx="-5" cy="0"  rx="3.5" ry="5"/>
+      <ellipse cx="5"  cy="0"  rx="3.5" ry="5"/>
+      <ellipse cx="-5" cy="-8" rx="3" ry="4.5"/>
+      <ellipse cx="5"  cy="-8" rx="3" ry="4.5"/>
+      <ellipse cx="0"  cy="-14" rx="3" ry="4.5"/>
+    </g>
+  </g>
+
+  <!-- Tête de vache (gauche) -->
+  <g transform="translate(72 110)">
+    <!-- oreilles -->
+    <ellipse cx="-18" cy="-8" rx="6" ry="9" fill="url(#animalGrad)" transform="rotate(-25 -18 -8)"/>
+    <ellipse cx="18"  cy="-8" rx="6" ry="9" fill="url(#animalGrad)" transform="rotate(25 18 -8)"/>
+    <!-- cornes -->
+    <path d="M-14 -14 Q-22 -28 -28 -22" stroke="#3A4742" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M14 -14 Q22 -28 28 -22" stroke="#3A4742" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- crâne -->
+    <path d="M -22 0 Q -20 -16 0 -18 Q 20 -16 22 0 Q 22 14 14 22 Q 0 28 -14 22 Q -22 14 -22 0 Z" fill="url(#animalGrad)"/>
+    <!-- museau plus clair -->
+    <ellipse cx="0" cy="14" rx="11" ry="9" fill="#A8B2AC"/>
+    <!-- narines -->
+    <ellipse cx="-3.5" cy="13" rx="1.2" ry="1.8" fill="#1B2A22"/>
+    <ellipse cx="3.5"  cy="13" rx="1.2" ry="1.8" fill="#1B2A22"/>
+    <!-- yeux -->
+    <circle cx="-7" cy="-2" r="2" fill="#1B2A22"/>
+    <circle cx="7"  cy="-2" r="2" fill="#1B2A22"/>
+  </g>
+
+  <!-- Tête de chèvre (droite) -->
+  <g transform="translate(128 112)">
+    <!-- oreilles -->
+    <path d="M-16 -2 Q-26 -6 -28 6 Q-22 8 -14 4 Z" fill="url(#animalGrad)"/>
+    <path d="M16 -2 Q26 -6 28 6 Q22 8 14 4 Z" fill="url(#animalGrad)"/>
+    <!-- cornes courbées -->
+    <path d="M-8 -16 Q-14 -28 -8 -34" stroke="#3A4742" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M8 -16 Q14 -28 8 -34" stroke="#3A4742" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- visage allongé -->
+    <path d="M -16 -8 Q -14 -18 0 -20 Q 14 -18 16 -8 Q 16 12 8 22 Q 0 26 -8 22 Q -16 12 -16 -8 Z" fill="url(#animalGrad)"/>
+    <!-- yeux -->
+    <ellipse cx="-6" cy="-4" rx="1.6" ry="2.2" fill="#1B2A22"/>
+    <ellipse cx="6"  cy="-4" rx="1.6" ry="2.2" fill="#1B2A22"/>
+    <!-- museau -->
+    <ellipse cx="0" cy="16" rx="6" ry="5" fill="#A8B2AC"/>
+    <!-- barbiche -->
+    <path d="M-3 22 Q0 30 3 22 L1 26 Z" fill="#3A4742"/>
+  </g>
+
+  <!-- Part de fromage doré au centre/bas -->
+  <g transform="translate(100 152)">
+    <path d="M -28 0 L 28 0 L 22 12 L -22 12 Z" fill="url(#cheeseGrad)" stroke="#8B5E0F" stroke-width="1"/>
+    <path d="M -28 0 L 28 0 Q 0 -6 -28 0 Z" fill="#F8E6A8"/>
+    <circle cx="-12" cy="6" r="1.6" fill="#8B5E0F"/>
+    <circle cx="4"   cy="7" r="1.2" fill="#8B5E0F"/>
+    <circle cx="16"  cy="5" r="1.8" fill="#8B5E0F"/>
+  </g>
+
+  <!-- Anneau intérieur subtil -->
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#176B3A" stroke-width="1.2" stroke-opacity="0.25"/>
+</svg>

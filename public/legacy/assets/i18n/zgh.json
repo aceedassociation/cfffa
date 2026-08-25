@@ -1,0 +1,52 @@
+{
+  "_note": "À COMPLÉTER : traductions Tamazight (Tifinagh) à valider par locuteur natif. Les libellés courts du menu sont proposés ; les textes longs reprennent le français en attendant validation.",
+  "nav": {
+    "president": "ⴰⵡⴰⵍ ⵏ ⵓⵏⵙⵙⵉⵅⴼ",
+    "about": "ⵎⴰⵏⵉ ⵏⵍⵍⴰ",
+    "vision": "ⵜⴰⵎⵓⵖⵍⵉ ⵏⵏⵖ",
+    "products": "ⵜⴰⵥⵕⵉⴳⵉⵏ ⵏⵏⵖ",
+    "partners": "ⵉⵎⴷⵔⴰⵡⵏ ⵏⵏⵖ",
+    "rd": "ⵜⵉⴼⴰⵡⵉⵏ ⵏ ⵓⴽⵍⵉⵙⵜⵔ",
+    "membership": "ⴰⵎⴰⵏⵙⵉ",
+    "regulation": "ⵉⵍⵓⴳⴰⵏ",
+    "contact": "ⵎⵢⴰⵡⴰⴹ",
+    "become_member": "ⵉⵍⵉ ⴷ ⴰⵎⴹⵕⵏ",
+    "cta_adhesion": "ⵉⵍⵉ ⴷ ⴰⵎⴹⵕⵏ",
+    "search_smart": "ⴰⵔⵣⵣⵓ"
+  },
+  "hero": {
+    "pill": "ⵜⴰⵙⵉⵍⴰ ⵜⴰⵎⵖⵔⴰⴱⵉⵜ ⵏ ⵜⴰⴼⵕⵎⴰⵊⵉⵏ-ⴰⴳⵔⵓ",
+    "title_html": "Faire du <span class=\"text-gradient\">fromage marocain</span> un levier de souveraineté alimentaire. <!-- À COMPLÉTER : traduction Tamazight -->",
+    "sub_html": "<!-- À COMPLÉTER : traduction Tamazight du sous-titre hero -->Le <strong class=\"text-[var(--ffa-forest-dark)]\">Cluster Filière Fromage-Agro (CFFA)</strong> rassemble agriculteurs-éleveurs, coopératives, sociétés industrielles, chercheurs et institutions pour transformer chaque litre de lait en valeur durable.",
+    "women_caption_html": "<!-- À COMPLÉTER : traduction Tamazight -->Plus de <strong class=\"text-[var(--ffa-ink)]\">1 000 femmes</strong> rurales accompagnées dans la filière."
+  },
+  "stats": {
+    "title": "ⵜⵉⵣⵎⵎⴰⵔ ⵏ ⵜⵎⴰⵏⴽⵉⴹⴰ ⵉⵎⵎⵓⵏ",
+    "subtitle": "<!-- À COMPLÉTER : traduction Tamazight -->Des chiffres qui témoignent de l'ancrage du CFFA dans le tissu rural marocain.",
+    "pill": "ⵜⴰⵎⵓⵏⵜ ⵏⵏⵖ",
+    "farmers": "ⵉⴼⵍⵍⴰⵃⵏ ⴷ ⵉⵎⵙⴽⵙⴰⵡⵏ",
+    "women": "ⵜⵉⵎⵙⵏⵍⴽⴰⵎⵉⵏ",
+    "coops": "ⵜⵉⵎⵉⵣⴰⵔⵉⵏ ⵜⵉⴼⵍⵍⴰⵃⵉⵏ",
+    "companies": "ⵜⵉⵎⵙⵎⵓⵏⵉⵏ ⵏ ⵓⵎⴷⵔⴰⵡ",
+    "regions": "ⵜⵉⵎⵏⴰⴹⵉⵏ",
+    "invested": "ⵉⵙⵎⴰⵣⵣⴰⵍⵏ",
+    "liters_day": "ⵍⵉⵜⵔ ⵏ ⵡⴰⵙⵉⴼ / ⴰⵙⵙ"
+  },
+  "footer": {
+    "tagline": "<!-- À COMPLÉTER : traduction Tamazight -->Un écosystème marocain réunissant agriculteurs-éleveurs, coopératives, sociétés industrielles et chercheurs.",
+    "explore": "ⵙⵉⴽⵙⵍ",
+    "community": "ⵜⴰⵎⵓⵏⵜ",
+    "newsletter_title": "ⵇⵇⵉⵎ ⴷ ⴰⵎⵖⵕⴰⴱⵉ",
+    "newsletter_text": "<!-- À COMPLÉTER : traduction Tamazight -->Recevez les actualités du Cluster et de la filière.",
+    "newsletter_ok": "ⵉⵀ",
+    "rights": "ⴰⴽⴽⵯ ⵉⵣⵔⴼⴰⵏ ⵟⵟⴼⵏ."
+  },
+  "common": {
+    "see_more": "ⵙⵉⵏ ⵓⴳⴳⴰⵔ",
+    "see_all": "ⵥⵕ ⵎⴰⵕⵕⴰ",
+    "view_map": "ⵥⵕ ⴳ Google Maps",
+    "see_on_map": "ⵥⵕ ⴳ ⵜⵎⵏⴰⴹⵜ",
+    "open_chat": "ⴰⵎⵙⵙⴰⵏ CFFA",
+    "loading": "ⵉⵍⴰⵎ…"
+  }
+}

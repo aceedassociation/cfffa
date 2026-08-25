@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adhésion — Cluster Filière Fromage-Agro (CFFA)</title>
+  <meta name="description" content="Formulaire d'adhésion en 3 étapes au CFFA — PME / Start-up / Grandes Entreprises, Institutionnels, Enseignement-Recherche." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: {
+      forest: { DEFAULT:'#2E9E5F', dark:'#176B3A', light:'#5FB97E', sage:'#B5D9C0' },
+      cream: { DEFAULT:'#fdfaf3', dark:'#f7f1e3' },
+      gold: { DEFAULT:'#D6A11E', soft:'#E8CF8B' },
+      ink:'#1B2A22', mute:'#5E6B63', charcoal:'#3A4742',
+    } } } };
+  </script>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" type="image/jpeg" href="../assets/img/logo-cffa.jpg" />
+</head>
+<body>
+  <div id="app-header"></div>
+
+  <section class="bg-hero py-16 lg:py-20 relative overflow-hidden">
+    <div class="blob blob-gold w-[360px] h-[360px] -top-20 -right-20"></div>
+    <div class="max-w-5xl mx-auto px-4 lg:px-8 text-center reveal">
+      <span class="pill pill-gold mb-4">Rejoignez-nous</span>
+      <h1 class="font-display text-5xl lg:text-6xl font-bold leading-tight">Devenir adhérent</h1>
+      <p class="mt-5 text-lg text-[var(--ffa-mute)] max-w-3xl mx-auto">Rejoignez le Cluster Filière Fromage-Agro (CFFA) : PME / Start-up / Grandes Entreprises, Institutionnels, Enseignement-Recherche.</p>
+    </div>
+  </section>
+
+  <section id="formulaire" class="py-16">
+    <div class="max-w-3xl mx-auto px-4 lg:px-8">
+      <!-- Step indicator -->
+      <div class="step-indicator mb-10 reveal" id="stepIndicator">
+        <span class="step-dot active" data-step="1">1</span><span class="step-line"></span>
+        <span class="step-dot" data-step="2">2</span><span class="step-line"></span>
+        <span class="step-dot" data-step="3">3</span>
+      </div>
+
+      <form id="adhesionForm" class="card p-7 lg:p-9 reveal reveal-delay-1" novalidate>
+        <!-- Step 1 -->
+        <section data-step="1" class="form-step">
+          <h2 class="font-display text-2xl font-bold mb-1">Vos coordonnées</h2>
+          <p class="text-sm text-[var(--ffa-mute)] mb-6">Commençons par mieux vous connaître.</p>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="text-sm font-semibold mb-1.5 block">Nom *</label>
+              <input required name="nom" class="input" type="text" placeholder="Bennani"/>
+            </div>
+            <div>
+              <label class="text-sm font-semibold mb-1.5 block">Prénom *</label>
+              <input required name="prenom" class="input" type="text" placeholder="Fatima"/>
+            </div>
+            <div>
+              <label class="text-sm font-semibold mb-1.5 block">Email *</label>
+              <input required name="email" class="input" type="email" placeholder="vous@coop-marocaine.ma"/>
+            </div>
+            <div>
+              <label class="text-sm font-semibold mb-1.5 block">Téléphone *</label>
+              <input required name="tel" class="input" type="tel" placeholder="+212 6 00 00 00 00"/>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm font-semibold mb-1.5 block">Région *</label>
+              <select required name="region" class="select">
+                <option value="">— Sélectionnez —</option>
+                <optgroup label="Régions couvertes par le CFFA">
+                  <option>Casablanca-Settat (siège)</option>
+                  <option>Rabat-Salé-Kénitra</option>
+                  <option>Fès-Meknès</option>
+                  <option>Béni Mellal-Khénifra</option>
+                  <option>Marrakech-Safi</option>
+                  <option>Laâyoune-Sakia El Hamra</option>
+                </optgroup>
+                <optgroup label="Autres régions (membres ponctuels)">
+                  <option>Tanger-Tétouan-Al Hoceïma</option>
+                  <option>Oriental</option>
+                  <option>Drâa-Tafilalet</option>
+                  <option>Souss-Massa</option>
+                  <option>Guelmim-Oued Noun</option>
+                  <option>Dakhla-Oued Ed-Dahab</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 2 -->
+        <section data-step="2" class="form-step hidden">
+          <h2 class="font-display text-2xl font-bold mb-1">Votre organisation</h2>
+          <p class="text-sm text-[var(--ffa-mute)] mb-6">Parlez-nous de votre activité — notre IA suggérera la catégorie la plus adaptée.</p>
+
+          <div class="space-y-4">
+            <div>
+              <label class="text-sm font-semibold mb-1.5 block">Nom de l'organisation *</label>
+              <input required name="org" class="input" type="text" placeholder="Coopérative Atlas Lait"/>
+            </div>
+            <div>
+              <label class="text-sm font-semibold mb-1.5 block flex items-center gap-2">
+                Décrivez votre activité
+                <span class="pill pill-gold text-[10px] py-0.5 px-2">Assist. IA</span>
+              </label>
+              <textarea name="activite" id="activiteField" class="textarea" rows="4" placeholder="Ex: Nous sommes une coopérative de 80 éleveurs de vaches laitières dans la région de Fès-Meknès, produisant 4000L de lait par jour…"></textarea>
+              <div id="aiSuggestion" class="hidden mt-3 p-4 rounded-xl border border-[var(--ffa-forest)]/15 bg-gradient-to-br from-[var(--ffa-cream)] to-white">
+                <p class="text-xs font-semibold uppercase tracking-widest text-[var(--ffa-forest)] mb-2 flex items-center gap-2">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+                  Suggestion IA
+                </p>
+                <p class="text-sm text-[var(--ffa-ink)]" id="aiSuggestionText"></p>
+              </div>
+            </div>
+            <div>
+              <label class="text-sm font-semibold mb-1.5 block">Catégorie de membre *</label>
+              <p class="text-xs text-[var(--ffa-mute)] mb-2">Le CFFA reconnaît 3 catégories statutaires de membres.</p>
+              <div class="grid sm:grid-cols-3 gap-3">
+                <label class="card p-4 cursor-pointer flex items-start gap-3 hover:border-[var(--ffa-forest)]/40">
+                  <input type="radio" name="categorie" value="entreprise" class="mt-1 accent-[var(--ffa-forest)]" required/>
+                  <span><span class="font-semibold block">PME, Start-up & Grandes Entreprises</span><span class="text-xs text-[var(--ffa-mute)]">Coopératives, GIE, industriels, distributeurs</span></span>
+                </label>
+                <label class="card p-4 cursor-pointer flex items-start gap-3 hover:border-[var(--ffa-forest)]/40">
+                  <input type="radio" name="categorie" value="institutionnel" class="mt-1 accent-[var(--ffa-forest)]"/>
+                  <span><span class="font-semibold block">Institutionnels</span><span class="text-xs text-[var(--ffa-mute)]">Ministères, agences, chambres</span></span>
+                </label>
+                <label class="card p-4 cursor-pointer flex items-start gap-3 hover:border-[var(--ffa-forest)]/40">
+                  <input type="radio" name="categorie" value="recherche" class="mt-1 accent-[var(--ffa-forest)]"/>
+                  <span><span class="font-semibold block">Enseignement-Recherche</span><span class="text-xs text-[var(--ffa-mute)]">Universités, instituts, CRRA</span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 3 -->
+        <section data-step="3" class="form-step hidden">
+          <h2 class="font-display text-2xl font-bold mb-1">Récapitulatif & validation</h2>
+          <p class="text-sm text-[var(--ffa-mute)] mb-6">Vérifiez vos informations avant l'envoi.</p>
+          <div id="summary" class="space-y-3 text-sm bg-[var(--ffa-cream)] rounded-xl p-5"></div>
+          <label class="flex items-start gap-3 mt-5 text-sm">
+            <input type="checkbox" required class="mt-1 accent-[var(--ffa-forest)]"/>
+            <span>J'accepte les <a href="reglementation.html#statuts" class="text-[var(--ffa-forest)] underline font-semibold">statuts</a> et la charte éthique du CFFA.</span>
+          </label>
+        </section>
+
+        <!-- Success -->
+        <section data-step="done" class="form-step hidden text-center py-8">
+          <div class="w-20 h-20 rounded-full bg-[var(--ffa-forest)] text-white mx-auto flex items-center justify-center mb-5">
+            <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <h2 class="font-display text-3xl font-bold mb-2">Demande envoyée !</h2>
+          <p class="text-[var(--ffa-mute)] max-w-md mx-auto">Merci pour votre adhésion. Notre équipe vous contactera sous 15 jours pour finaliser votre dossier.</p>
+          <a href="../index.html" class="btn btn-primary mt-6">Retour à l'accueil</a>
+        </section>
+
+        <!-- Navigation -->
+        <div id="formNav" class="flex justify-between mt-8">
+          <button type="button" id="prevBtn" class="btn btn-ghost" disabled>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            Précédent
+          </button>
+          <button type="button" id="nextBtn" class="btn btn-primary">
+            Suivant
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <p class="text-center text-xs text-[var(--ffa-mute)] mt-6">Besoin d'aide ? Utilisez notre <button type="button" onclick="FFAChatbot.open()" class="underline text-[var(--ffa-forest)] font-semibold">Assistant CFFA</button> ou contactez-nous directement.</p>
+    </div>
+  </section>
+
+  <div id="app-footer"></div>
+  <script src="../assets/js/chatbot.js"></script>
+  <script src="../assets/js/search.js"></script>
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/layout.js"></script>
+  <script>
+    // Multi-step form logic
+    const form = document.getElementById('adhesionForm');
+    const steps = form.querySelectorAll('.form-step');
+    const dots  = document.querySelectorAll('.step-dot');
+    const lines = document.querySelectorAll('.step-line');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const formNav = document.getElementById('formNav');
+    let current = 1;
+    const total = 3;
+
+    function show(step) {
+      steps.forEach(s => s.classList.toggle('hidden', s.dataset.step !== String(step)));
+      dots.forEach((d, i) => {
+        const n = i + 1;
+        d.classList.toggle('active', n === step);
+        d.classList.toggle('done', n < step);
+        if (n < step) d.innerHTML = '✓'; else d.textContent = n;
+      });
+      lines.forEach((l, i) => l.classList.toggle('done', i + 1 < step));
+      prevBtn.disabled = step === 1;
+      nextBtn.innerHTML = step === total
+        ? "Envoyer la demande <svg class='w-4 h-4' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M5 12l14-7-3 7 3 7-14-7z'/></svg>"
+        : "Suivant <svg class='w-4 h-4' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>";
+    }
+
+    function validateStep(step) {
+      const sec = form.querySelector(`[data-step="${step}"]`);
+      const fields = sec.querySelectorAll('[required]');
+      for (const f of fields) {
+        if (!f.checkValidity()) { f.reportValidity(); return false; }
+      }
+      return true;
+    }
+
+    function buildSummary() {
+      const data = Object.fromEntries(new FormData(form));
+      const labels = {
+        nom: 'Nom', prenom: 'Prénom', email: 'Email', tel: 'Téléphone', region: 'Région',
+        org: 'Organisation', activite: 'Activité', categorie: 'Catégorie',
+      };
+      const sum = document.getElementById('summary');
+      sum.innerHTML = Object.entries(labels).map(([k, l]) => `
+        <div class="flex justify-between gap-4 border-b border-[rgba(31,93,58,.08)] py-2">
+          <span class="text-[var(--ffa-mute)] font-semibold">${l}</span>
+          <span class="text-right max-w-[60%]">${data[k] || '—'}</span>
+        </div>`).join('');
+    }
+
+    nextBtn.addEventListener('click', () => {
+      if (current === total) {
+        if (!validateStep(current)) return;
+        steps.forEach(s => s.classList.add('hidden'));
+        form.querySelector('[data-step="done"]').classList.remove('hidden');
+        formNav.classList.add('hidden');
+        document.getElementById('stepIndicator').classList.add('hidden');
+        return;
+      }
+      if (!validateStep(current)) return;
+      current += 1;
+      if (current === 3) buildSummary();
+      show(current);
+    });
+    prevBtn.addEventListener('click', () => { if (current > 1) { current -= 1; show(current); } });
+
+    // AI suggestion on activity description
+    const activite = document.getElementById('activiteField');
+    const aiBox = document.getElementById('aiSuggestion');
+    const aiText = document.getElementById('aiSuggestionText');
+    let aiTimer;
+    activite.addEventListener('input', () => {
+      clearTimeout(aiTimer);
+      const v = activite.value.trim().toLowerCase();
+      if (v.length < 25) { aiBox.classList.add('hidden'); return; }
+      aiTimer = setTimeout(() => {
+        // 3 catégories officielles : entreprise (PME/start-up/GE inc. coopératives), institutionnel, recherche
+        let cat = 'entreprise', label = 'PME, Start-up & Grandes Entreprises (coopérative incluse)';
+        if (/(université|universite|recherche|labo|chercheur|institut|académ|crra|iav|inra)/.test(v)) { cat = 'recherche'; label = 'Enseignement-Recherche'; }
+        else if (/(ministère|ministere|onssa|onca|conseil|institution|chambre|public|agence)/.test(v)) { cat = 'institutionnel'; label = 'Institutionnels'; }
+        let region = 'votre région';
+        const rx = /(fès|fes|meknès|meknes|rabat|salé|sale|kénitra|kenitra|casablanca|settat|berrechid|marrakech|safi|béni|beni|mellal|khénifra|khenifra|laâyoune|laayoune|sakia)/.exec(v);
+        if (rx) region = rx[0].charAt(0).toUpperCase() + rx[0].slice(1);
+        aiText.innerHTML = `D'après votre description, vous semblez correspondre à la catégorie <strong>${label}</strong>. La région <strong>${region}</strong> est bien couverte par le CFFA. La case adaptée a été pré-sélectionnée ci-dessous.`;
+        aiBox.classList.remove('hidden');
+        const radio = form.querySelector(`input[name="categorie"][value="${cat}"]`);
+        if (radio) radio.checked = true;
+      }, 700);
+    });
+
+    show(1);
+  </script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cluster Filière Fromage-Agro (CFFA) — Maroc</title>
+  <meta name="description" content="Le Cluster Filière Fromage-Agro (CFFA) fédère ~20 000 agriculteurs-éleveurs, 500 coopératives et 15 sociétés au service d'une filière fromage marocaine souveraine, compétitive et créatrice de valeur." />
+  <meta name="keywords" content="CFFA, Cluster Filière Fromage-Agro, fromage Maroc, coopérative laitière, agroalimentaire, terroir marocain, Berrechid, Abdennabi El Hbaz" />
+  <meta property="og:title" content="Cluster Filière Fromage-Agro (CFFA) — Maroc" />
+  <meta property="og:description" content="Un écosystème marocain pour faire du fromage un levier de souveraineté alimentaire, de développement rural et d'excellence industrielle." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_MA" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest:    { DEFAULT: '#2E9E5F', dark: '#176B3A', light: '#5FB97E', sage: '#B5D9C0' },
+            cream:     { DEFAULT: '#fdfaf3', dark: '#f7f1e3' },
+            gold:      { DEFAULT: '#D6A11E', soft: '#E8CF8B' },
+            ink:       '#1B2A22',
+            mute:      '#5E6B63',
+            charcoal:  '#3A4742',
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/jpeg" href="assets/img/logo-cffa.jpg" />
+</head>
+<body>
+  <div id="app-header"></div>
+
+  <!-- HERO -->
+  <section class="bg-hero relative overflow-hidden">
+    <div class="blob blob-green w-[420px] h-[420px] -top-20 -left-20"></div>
+    <div class="blob blob-gold  w-[380px] h-[380px] -bottom-32 -right-20"></div>
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 py-20 lg:py-28 relative grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 reveal">
+        <span class="pill mb-5">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.8L21 10l-5 4.3L17.4 21 12 17.7 6.6 21 8 14.3 3 10l6.6-1.2L12 2z"/></svg>
+          <span data-i18n="hero.pill">Filière marocaine fromage-agro</span>
+        </span>
+        <h1 class="font-display text-5xl lg:text-7xl font-bold leading-[1.05] text-[var(--ffa-ink)]" data-i18n="hero.title_html" data-i18n-html>
+          Faire du <span class="text-gradient">fromage marocain</span> un levier de souveraineté alimentaire.
+        </h1>
+        <p class="mt-6 text-lg text-[var(--ffa-mute)] max-w-2xl leading-relaxed" data-i18n="hero.sub_html" data-i18n-html>
+          Le <strong class="text-[var(--ffa-forest-dark)]">Cluster Filière Fromage-Agro (CFFA)</strong> rassemble agriculteurs-éleveurs, coopératives, sociétés industrielles, chercheurs et institutions
+          pour transformer chaque litre de lait en valeur durable — au service du développement rural et de l'excellence industrielle.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="pages/adhesion.html" class="btn btn-primary">
+            Devenir adhérent
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+          </a>
+          <a href="pages/nos-produits.html" class="btn btn-ghost">Découvrir nos produits</a>
+          <button data-search-trigger class="btn btn-ghost">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.3-4.3M11 19a8 8 0 100-16 8 8 0 000 16z"/></svg>
+            Recherche intelligente
+            <kbd class="ml-1 text-[10px] tracking-widest border border-[rgba(23,107,58,.25)] rounded px-1">⌘K</kbd>
+          </button>
+        </div>
+        <div class="mt-10 flex items-center gap-6 text-sm text-[var(--ffa-mute)]">
+          <div class="flex -space-x-2">
+            <span class="w-9 h-9 rounded-full bg-[var(--ffa-leaf)] border-2 border-white"></span>
+            <span class="w-9 h-9 rounded-full bg-[var(--ffa-gold)] border-2 border-white"></span>
+            <span class="w-9 h-9 rounded-full bg-[var(--ffa-forest)] border-2 border-white"></span>
+            <span class="w-9 h-9 rounded-full bg-[var(--ffa-sage)] border-2 border-white"></span>
+          </div>
+          <p data-i18n="hero.women_caption_html" data-i18n-html>Plus de <strong class="text-[var(--ffa-ink)]">1 000 femmes</strong> rurales accompagnées dans la filière.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-5 reveal-right reveal-delay-2">
+        <div class="relative">
+          <div class="absolute -inset-4 bg-gradient-to-br from-[var(--ffa-leaf)]/30 to-[var(--ffa-gold)]/30 rounded-[2.5rem] blur-2xl"></div>
+          <div class="relative card p-3 rounded-[2rem]">
+            <figure class="photo relative rounded-[1.5rem] overflow-hidden h-[440px]">
+              <img src="assets/img/photos/assemblee-generale.jpeg" alt="Assemblée générale du Cluster CFFA — adhérents et partenaires réunis" loading="eager"/>
+              <figcaption class="photo-caption">Assemblée générale du CFFA — la force d'un écosystème uni.</figcaption>
+            </figure>
+            <div class="grid grid-cols-3 divide-x divide-[rgba(23,107,58,.1)] mt-3 px-2 py-3 text-center">
+              <div><p class="font-display font-bold text-xl text-[var(--ffa-forest-dark)]">Tradition</p><p class="text-xs text-[var(--ffa-mute)]">Savoir-faire</p></div>
+              <div><p class="font-display font-bold text-xl text-[var(--ffa-forest-dark)]">Science</p><p class="text-xs text-[var(--ffa-mute)]">R&D continue</p></div>
+              <div><p class="font-display font-bold text-xl text-[var(--ffa-forest-dark)]">Terroir</p><p class="text-xs text-[var(--ffa-mute)]">6 régions</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="py-16 lg:py-20 bg-soft">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="pill mb-3" data-i18n="stats.pill">Notre communauté</span>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold" data-i18n="stats.title">La force d'un écosystème uni</h2>
+        <p class="text-[var(--ffa-mute)] mt-4" data-i18n="stats.subtitle">Des chiffres qui témoignent de l'ancrage du CFFA dans le tissu rural marocain.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="card p-7 text-center reveal"><p class="stat-num" data-counter="20000" data-suffix="">0</p><p class="text-sm uppercase tracking-wider text-[var(--ffa-mute)] mt-2" data-i18n="stats.farmers">Agriculteurs-éleveurs</p></div>
+        <div class="card p-7 text-center reveal reveal-delay-1"><p class="stat-num" data-counter="1000" data-suffix="+">0</p><p class="text-sm uppercase tracking-wider text-[var(--ffa-mute)] mt-2" data-i18n="stats.women">Femmes productrices</p></div>
+        <div class="card p-7 text-center reveal reveal-delay-2"><p class="stat-num" data-counter="500" data-suffix="">0</p><p class="text-sm uppercase tracking-wider text-[var(--ffa-mute)] mt-2" data-i18n="stats.coops">Coopératives agricoles</p></div>
+        <div class="card p-7 text-center reveal reveal-delay-3"><p class="stat-num" data-counter="15">0</p><p class="text-sm uppercase tracking-wider text-[var(--ffa-mute)] mt-2" data-i18n="stats.companies">Sociétés partenaires</p></div>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-5 mt-5">
+        <div class="card p-7 text-center reveal"><p class="stat-num" data-counter="6">0</p><p class="text-sm uppercase tracking-wider text-[var(--ffa-mute)] mt-2" data-i18n="stats.regions">Régions couvertes</p></div>
+        <div class="card p-7 text-center reveal reveal-delay-1"><p class="stat-num font-display text-4xl text-[var(--ffa-forest-dark)]">+10 Mds DH</p><p class="text-sm uppercase tracking-wider text-[var(--ffa-mute)] mt-2" data-i18n="stats.invested">Investis dans la filière</p></div>
+        <div class="card p-7 text-center reveal reveal-delay-2"><p class="stat-num font-display text-4xl text-[var(--ffa-forest-dark)]">~700 000 L</p><p class="text-sm uppercase tracking-wider text-[var(--ffa-mute)] mt-2" data-i18n="stats.liters_day">Lait/jour (avant Covid)</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION PREVIEW -->
+  <section class="py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <span class="pill pill-gold mb-4">Notre vision</span>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold leading-tight">Une chaîne de valeur intégrée, ancrée dans le terroir et tournée vers l'avenir.</h2>
+        <p class="text-[var(--ffa-mute)] mt-5 leading-relaxed">
+          Aujourd'hui, moins de <strong>4 %</strong> du lait marocain est transformé en fromage, contre environ <strong>38 %</strong> au niveau mondial.
+          Notre vision : remplacer l'importation par le <em>Made in Morocco</em>, structurer une filière équitable, et faire émerger une marque marocaine forte.
+        </p>
+        <a href="pages/notre-vision.html" class="btn btn-primary mt-7">
+          Lire notre vision
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+        </a>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="card p-6 reveal">
+          <div class="w-11 h-11 rounded-xl bg-[rgba(23,107,58,.1)] text-[var(--ffa-forest-dark)] flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg mb-1">Valoriser le lait</h3>
+          <p class="text-sm text-[var(--ffa-mute)]">Transformer les excédents en fromages diversifiés et compétitifs.</p>
+        </div>
+        <div class="card p-6 reveal reveal-delay-1 sm:translate-y-6">
+          <div class="w-11 h-11 rounded-xl bg-[rgba(214,161,30,.18)] text-[#8a6a18] flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg mb-1">Made in Morocco</h3>
+          <p class="text-sm text-[var(--ffa-mute)]">Remplacer l'importation par des produits nationaux compétitifs.</p>
+        </div>
+        <div class="card p-6 reveal reveal-delay-2">
+          <div class="w-11 h-11 rounded-xl bg-[rgba(23,107,58,.1)] text-[var(--ffa-forest-dark)] flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-3.13a4 4 0 100-8 4 4 0 000 8z"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg mb-1">Chaîne équitable</h3>
+          <p class="text-sm text-[var(--ffa-mute)]">Relier producteurs, coopératives, transformateurs et distributeurs.</p>
+        </div>
+        <div class="card p-6 reveal reveal-delay-3 sm:translate-y-6">
+          <div class="w-11 h-11 rounded-xl bg-[rgba(214,161,30,.18)] text-[#8a6a18] flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21l7.78-7.55 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg mb-1">Monde rural</h3>
+          <p class="text-sm text-[var(--ffa-mute)]">Créer des emplois durables et améliorer les revenus agricoles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUITS -->
+  <section class="py-20 lg:py-24 bg-dotted">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex flex-wrap items-end justify-between gap-6 mb-12 reveal">
+        <div>
+          <span class="pill mb-3">Notre catalogue</span>
+          <h2 class="font-display text-4xl lg:text-5xl font-bold">Nos produits</h2>
+          <p class="text-[var(--ffa-mute)] mt-3 max-w-xl">Du lait fermenté au fromage à pâte dure — une gamme issue de nos coopératives et sociétés industrielles.</p>
+        </div>
+        <a href="pages/nos-produits.html" class="btn btn-ghost">
+          Voir tout le catalogue
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+        </a>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <a href="pages/nos-produits.html#laits-fermentes" class="card p-6 group reveal">
+          <div class="aspect-square rounded-xl bg-gradient-to-br from-[var(--ffa-sage)] to-[var(--ffa-leaf)] mb-4 flex items-center justify-center overflow-hidden">
+            <svg viewBox="0 0 100 100" class="w-3/4 transition-transform group-hover:scale-110"><rect x="35" y="25" width="30" height="55" rx="5" fill="#fff"/><rect x="40" y="35" width="20" height="40" fill="#fdfaf3"/><rect x="40" y="35" width="20" height="6" fill="#5FB97E"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-1">Laits fermentés</h3>
+          <p class="text-sm text-[var(--ffa-mute)]">Saykouk, Kefir, Kombucha, sans gluten.</p>
+        </a>
+        <a href="pages/nos-produits.html#frais" class="card p-6 group reveal reveal-delay-1">
+          <div class="aspect-square rounded-xl bg-gradient-to-br from-[var(--ffa-gold-soft)] to-[var(--ffa-gold)] mb-4 flex items-center justify-center overflow-hidden">
+            <svg viewBox="0 0 100 100" class="w-3/4 transition-transform group-hover:scale-110"><rect x="18" y="35" width="64" height="34" rx="6" fill="#fff5d6"/><rect x="22" y="40" width="56" height="24" rx="3" fill="#f3e3b2"/><circle cx="35" cy="52" r="3" fill="#D6A11E"/><circle cx="55" cy="55" r="2" fill="#D6A11E"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-1">Fromages frais & à tartiner</h3>
+          <p class="text-sm text-[var(--ffa-mute)]">Frais, à tartiner, liquide, Feta.</p>
+        </a>
+        <a href="pages/nos-produits.html#mozzarella" class="card p-6 group reveal reveal-delay-2">
+          <div class="aspect-square rounded-xl bg-gradient-to-br from-[var(--ffa-cream)] to-[#e8d49a] mb-4 flex items-center justify-center overflow-hidden">
+            <svg viewBox="0 0 100 100" class="w-3/4 transition-transform group-hover:scale-110"><ellipse cx="50" cy="55" rx="32" ry="20" fill="#fff"/><circle cx="40" cy="55" r="8" fill="#fdfaf3"/><circle cx="55" cy="50" r="6" fill="#fdfaf3"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-1">Mozzarella</h3>
+          <p class="text-sm text-[var(--ffa-mute)]">Pâte filée, fraîcheur garantie.</p>
+        </a>
+        <a href="pages/nos-produits.html#pate-dure" class="card p-6 group reveal reveal-delay-3">
+          <div class="aspect-square rounded-xl bg-gradient-to-br from-[#e0e8d4] to-[var(--ffa-leaf)] mb-4 flex items-center justify-center overflow-hidden">
+            <svg viewBox="0 0 100 100" class="w-3/4 transition-transform group-hover:scale-110"><path d="M20 70 L50 25 L80 70 Z" fill="#f3e3b2" stroke="#a8821f" stroke-width="1.5"/><circle cx="45" cy="55" r="3" fill="#a8821f"/><circle cx="55" cy="60" r="2" fill="#a8821f"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-1">Fromages à pâte dure</h3>
+          <p class="text-sm text-[var(--ffa-mute)]">Edam, Gouda, Cheddar, râpé.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EN IMAGES -->
+  <section class="py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex flex-wrap items-end justify-between gap-6 mb-10 reveal">
+        <div>
+          <span class="pill pill-gold mb-3">En images</span>
+          <h2 class="font-display text-4xl lg:text-5xl font-bold">Le Cluster en action</h2>
+          <p class="text-[var(--ffa-mute)] mt-3 max-w-xl">Quelques instantanés de notre écosystème : assemblées, missions internationales, coopération Maroc-Mauritanie.</p>
+        </div>
+        <a href="pages/qui-sommes-nous.html" class="btn btn-ghost">En savoir plus</a>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <figure class="photo aspect-[4/5] reveal-zoom">
+          <img src="assets/img/photos/assemblee-generale.jpeg" alt="Assemblée générale du CFFA" loading="lazy"/>
+          <figcaption class="photo-caption">Assemblée générale</figcaption>
+        </figure>
+        <figure class="photo aspect-[4/5] reveal-zoom reveal-delay-1">
+          <img src="assets/img/photos/mauritanie-delegation.jpeg" alt="Délégation du CFFA en mission officielle en Mauritanie" loading="lazy"/>
+          <figcaption class="photo-caption">Mission officielle — Mauritanie</figcaption>
+        </figure>
+        <figure class="photo aspect-[4/5] reveal-zoom reveal-delay-2">
+          <img src="assets/img/photos/partenariat-international.jpeg" alt="Partenariat international du CFFA" loading="lazy"/>
+          <figcaption class="photo-caption">Partenariat international</figcaption>
+        </figure>
+        <figure class="photo aspect-[4/5] reveal-zoom reveal-delay-3">
+          <img src="assets/img/photos/evenement-collectif.jpeg" alt="Événement collectif du Cluster CFFA" loading="lazy"/>
+          <figcaption class="photo-caption">Rencontre des adhérents</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSYSTEME / CTA -->
+  <section class="py-20 lg:py-24 bg-soft">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="order-2 lg:order-1 grid grid-cols-2 gap-4 reveal-left">
+        <div class="card p-6">
+          <p class="text-sm uppercase text-[var(--ffa-mute)] tracking-wider mb-2">Recherche</p>
+          <p class="font-display text-2xl font-bold">Flammes du Cluster</p>
+          <p class="text-sm text-[var(--ffa-mute)] mt-2">Innovations pour la qualité du lait & l'affinage.</p>
+        </div>
+        <div class="card p-6 mt-8">
+          <p class="text-sm uppercase text-[var(--ffa-mute)] tracking-wider mb-2">Territoire</p>
+          <p class="font-display text-2xl font-bold">6 régions</p>
+          <p class="text-sm text-[var(--ffa-mute)] mt-2">Casablanca-Settat (siège), Rabat-Salé-Kénitra, Fès-Meknès, Béni Mellal-Khénifra, Marrakech-Safi, Laâyoune-Sakia El Hamra.</p>
+        </div>
+        <div class="card p-6 -mt-2">
+          <p class="text-sm uppercase text-[var(--ffa-mute)] tracking-wider mb-2">Partenariat</p>
+          <p class="font-display text-2xl font-bold">3 unités</p>
+          <p class="text-sm text-[var(--ffa-mute)] mt-2">Aysa FMCG · Bladi · GIE Bassin de Ouargha.</p>
+        </div>
+        <div class="card p-6 mt-6">
+          <p class="text-sm uppercase text-[var(--ffa-mute)] tracking-wider mb-2">Stratégie</p>
+          <p class="font-display text-2xl font-bold">Maroc-Mauritanie</p>
+          <p class="text-sm text-[var(--ffa-mute)] mt-2">Initiative Royale Atlantique, coopération Sud-Sud.</p>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2 reveal">
+        <span class="pill mb-3">Notre écosystème</span>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold leading-tight">Une chaîne de valeur intégrée, du pré à l'assiette.</h2>
+        <p class="text-[var(--ffa-mute)] mt-5 leading-relaxed">
+          Nous connectons agriculteurs-éleveurs, coopératives, sociétés industrielles, chercheurs et institutions
+          dans une dynamique nationale d'innovation et de structuration.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="pages/qui-sommes-nous.html#ecosysteme" class="btn btn-primary">Notre écosystème</a>
+          <a href="pages/ancrage-territorial.html" class="btn btn-ghost">Voir la cartographie</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTENAIRES -->
+  <section class="py-16 bg-soft border-y border-[rgba(23,107,58,.06)]">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex flex-wrap items-end justify-between gap-4 mb-10 reveal">
+        <div>
+          <span class="pill mb-3">Ils nous accompagnent</span>
+          <h2 class="font-display text-3xl lg:text-4xl font-bold">Nos partenaires</h2>
+        </div>
+        <a href="pages/nos-partenaires.html" class="btn btn-ghost">Tous les partenaires</a>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 reveal">
+        <!-- À COMPLÉTER : remplacer ces étiquettes textuelles par les logos officiels (PNG/SVG) -->
+        <div class="card aspect-[5/3] flex items-center justify-center p-4 text-center"><p class="font-display font-semibold text-[var(--ffa-forest-dark)] text-sm">Min. Agriculture</p></div>
+        <div class="card aspect-[5/3] flex items-center justify-center p-4 text-center"><p class="font-display font-semibold text-[var(--ffa-forest-dark)] text-sm">ONSSA</p></div>
+        <div class="card aspect-[5/3] flex items-center justify-center p-4 text-center"><p class="font-display font-semibold text-[var(--ffa-forest-dark)] text-sm">ONCA</p></div>
+        <div class="card aspect-[5/3] flex items-center justify-center p-4 text-center"><p class="font-display font-semibold text-[var(--ffa-forest-dark)] text-sm">IAV Hassan II</p></div>
+        <div class="card aspect-[5/3] flex items-center justify-center p-4 text-center"><p class="font-display font-semibold text-[var(--ffa-forest-dark)] text-sm">INRA</p></div>
+        <div class="card aspect-[5/3] flex items-center justify-center p-4 text-center"><p class="font-display font-semibold text-[var(--ffa-forest-dark)] text-sm">U. Hassan II</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Adhésion -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 lg:px-8">
+      <div class="rounded-[2rem] bg-forest text-white p-10 lg:p-14 relative overflow-hidden reveal">
+        <div class="absolute -top-20 -right-10 w-80 h-80 rounded-full blur-3xl opacity-30" style="background:#D6A11E"></div>
+        <div class="absolute -bottom-20 -left-10 w-72 h-72 rounded-full blur-3xl opacity-25" style="background:#5FB97E"></div>
+        <div class="relative grid lg:grid-cols-3 gap-8 items-center">
+          <div class="lg:col-span-2">
+            <span class="pill mb-3" style="background:rgba(255,255,255,.18); color:#fff;">Rejoignez-nous</span>
+            <h2 class="font-display text-3xl lg:text-4xl font-bold">Devenez membre du CFFA.</h2>
+            <p class="text-white/80 mt-3 max-w-2xl">PME / start-up / grandes entreprises, institutionnels, enseignement-recherche — accélérez votre impact au sein d'un écosystème national reconnu.</p>
+          </div>
+          <div class="flex lg:justify-end gap-3 flex-wrap">
+            <a href="pages/adhesion.html" class="btn btn-gold">Adhérer maintenant</a>
+            <a href="pages/contact.html" class="btn btn-ghost" style="border-color:rgba(255,255,255,.4); color:#fff;">Nous contacter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="app-footer"></div>
+
+  <script src="assets/js/chatbot.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/layout.js"></script>
+</body>
+</html>
